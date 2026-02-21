@@ -14,7 +14,6 @@ An integrated vision system for autonomous ships: vessel classification, hull nu
 
 
 
-
 Project Overview｜專案簡介
 
 
