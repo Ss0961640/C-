@@ -33,35 +33,6 @@ Pipeline｜系統流程
 
 Video input → Vessel classification → Hull number detection → OCR recognition → Visualization overlay
 
-輸入（影片 / 即時串流）
-        │
-        ├─ 船型分類（InceptionV3 / ResNet / EfficientNet）
-        │        └─ 輸出：船型類別（Vessel Type）
-        │
-        ├─ 船舷號偵測（YOLOv8n）
-        │        └─ 輸出：船舷號位置框（Bounding Boxes）
-        │
-        ├─ ROI 裁切 → OCR（PaddleOCR）
-        │        └─ 輸出：船舷號碼（Alphanumeric / 可擴充中文）
-        │
-        └─ 視覺化疊加（Overlay）
-                 └─ 輸出：標註後影片 / 即時顯示
-
-
-Input (Video / Live Stream)
-        │
-        ├─ Vessel Classification (InceptionV3 / ResNet / EfficientNet)
-        │        └─ Output: Vessel Type
-        │
-        ├─ Hull Number Detection (YOLOv8n)
-        │        └─ Output: Bounding Boxes
-        │
-        ├─ ROI Crop → OCR (PaddleOCR)
-        │        └─ Output: Hull Number Text (Alphanumeric, extendable to Chinese)
-        │
-        └─ Visualization Overlay
-                 └─ Output: Annotated Video / Live Display
-
 
 
 
@@ -118,18 +89,6 @@ Demo｜影片測試
 
 Each frame displays vessel type, hull bounding box, and OCR result.
 
-
-
-Structure｜專案結構
-Autonomous_Ship/
-    ├── final.py          # 主程式（整合分類 + 偵測 + OCR）
-    ├── weights/          # 模型權重
-    │   ├── cls_best.pt
-    │   └── yolo_best.pt
-    ├── OCR_test.py
-    └── output/
-        Run｜執行方式
-    python final.py --video path/to/video.mp4
 
 
 
