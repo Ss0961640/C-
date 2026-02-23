@@ -28,7 +28,7 @@ The system combines InceptionV3 (classification), YOLOv8n (detection), and Paddl
 Pipeline｜系統流程
 
 
-影片輸入 → 船型分類 → 船舷號偵測 → OCR 辨識 → 結果疊加顯示
+影片輸入 → 船型分類 → 船舷號偵測 → OCR 辨識 → Output
 
 Video input → Vessel classification → Hull number detection → OCR recognition → Visualization overlay
 
