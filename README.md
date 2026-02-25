@@ -1,5 +1,5 @@
 # 自駕船影像感知系統：船型分類 × 船舷號偵測 × OCR 辨識
-# An integrated vision system for autonomous ships: vessel classification, hull number detection, and OCR.
+An integrated vision system for autonomous ships: vessel classification, hull number detection, and OCR.
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
