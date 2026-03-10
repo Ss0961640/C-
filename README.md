@@ -1,4 +1,4 @@
-# 自駕船影像感知系統：船型分類 × 船舷號偵測 × OCR 辨識 
+# 自駕船系統開發專案：船隻偵測定位 × 船舷號識別 
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
@@ -8,9 +8,7 @@
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 以深度學習模型整合 YOLOv8n、InceptionV3 與 PaddleOCR，
-建立即時自駕船影像感知與船舷號辨識系統。
-本專案為「自駕船感知層（Perception Layer）」之視覺模組示範系統，
-可作為後續路徑規劃、避碰決策與智慧航行系統之影像前端輸入來源。
+本專案建構基於電腦視覺的船舶辨識與追蹤系統，提升船舶監測與自動航行決策能力。
 
 ---
 
@@ -22,7 +20,7 @@ https://github.com/user-attachments/assets/f79d4de2-7380-4360-a960-b54e18d32bcc
 
 
 ## 專案簡介 (Overview)
-本專案建構一套即時自駕船影像感知系統，整合船型分類、船舷號目標偵測與 OCR 文字辨識，
+整合船型分類、船舷號目標偵測與 OCR 文字辨識，
 建立從「影像擷取 → AI 模型推論 → 結果融合 → 即時視覺化」的完整端到端流程，
 支援影片與即時串流場景，適用於海事監控與自駕船感知模組前端。
 - 多模型協同架構設計（分類 × 偵測 × OCR）
